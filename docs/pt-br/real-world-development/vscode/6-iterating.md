@@ -11,11 +11,11 @@ next: false
 
 ## Revisar o trabalho
 
-Ao longo deste laboratório, você trabalhou com o GitHub Copilot em várias tarefas voltadas a melhorar a experiência do usuário. Usou o modo de agente para adicionar filtragem no cliente e no servidor, o servidor MCP do Playwright para testar manualmente esse trabalho em um navegador e, depois, um agente personalizado para implementar recursos de acessibilidade — controles para alternar o alto contraste e o modo claro — e orientou a sessão em andamento para ampliar o trabalho. Agora é hora de publicar esse trabalho local e revisá-lo da mesma forma que sua equipe faria.
+Ao longo deste laboratório, você trabalhou com o GitHub Copilot em várias tarefas voltadas a melhorar a experiência do usuário. Usou o modo de agente para adicionar filtragem no cliente e no servidor, o servidor Playwright do Model Context Protocol (MCP) para testar manualmente esse trabalho em um navegador e, depois, um agente personalizado para implementar recursos de acessibilidade — controles para alternar o alto contraste e o modo claro — e orientou a sessão em andamento para ampliar o trabalho. Agora é hora de publicar esse trabalho local e revisá-lo da mesma forma que sua equipe faria.
 
 ### Cenário
 
-Os fundamentos do design de software e do DevOps não mudam com a adição de IA generativa. Você ainda precisa de um ciclo real de revisão de tudo o que o Copilot produz. Com isso em mente, vamos enviar as alterações de acessibilidade do codespace ao repositório remoto, abrir um pull request e examinar o diff antes de envolver o restante da equipe.
+Os fundamentos do design de software e do desenvolvimento e operações (DevOps) não mudam com a adição de inteligência artificial (IA) generativa. Você ainda precisa de um ciclo real de revisão de tudo o que o Copilot produz. Com isso em mente, vamos enviar as alterações de acessibilidade do Codespace ao repositório remoto, abrir um pull request (PR) e examinar o diff antes de envolver o restante da equipe.
 ## Publicar os recursos de acessibilidade
 
 Os controles de alto contraste e modo claro que você implementou com o agente personalizado de acessibilidade no [Exercício 4][exercise-4] e no [Exercício 5][exercise-5] estão no codespace como alterações registradas em commits. Vamos enviá-las para uma branch no repositório remoto e abrir um pull request para que o restante da equipe possa revisar.
@@ -30,8 +30,8 @@ Os controles de alto contraste e modo claro que você implementou com o agente p
 8. Depois que o PR estiver aberto, selecione a guia **Files changed** para revisar o trabalho de ponta a ponta. Preste atenção especial a:
    - Os componentes de interface dos controles para alternar entre os modos.
    - O uso do armazenamento local para persistir as preferências do usuário.
-   - As alterações de CSS ou de estilos para os modos de alto contraste e claro.
-   - Os atributos de acessibilidade (rótulos ARIA, navegação por teclado etc.).
+   - As alterações de folhas de estilo em cascata (CSS) ou de estilos para os modos de alto contraste e claro.
+   - Os atributos de acessibilidade (rótulos de Aplicações Ricas de Internet Acessíveis (ARIA), navegação por teclado etc.).
    - Qualquer código JavaScript/TypeScript que gerencie a alternância de modos.
 
 9. Retorne à guia **Conversation**.
@@ -41,11 +41,11 @@ Os controles de alto contraste e modo claro que você implementou com o agente p
 11. Aguarde a conclusão dos fluxos de trabalho. Se tudo correr bem, eles deverão passar.
 
 > [!TIP]
-> Quer uma segunda opinião sobre o trabalho de acessibilidade? Marque `@copilot` em um comentário no PR com uma solicitação como "revise este PR em busca de outros problemas relacionados às WCAG" ou "sugira melhorias na navegação por teclado". O Copilot iniciará uma nova sessão para atender ao comentário.
+> Quer uma segunda opinião sobre o trabalho de acessibilidade? Marque `@copilot` em um comentário no PR com uma solicitação como "revise este PR em busca de outros problemas relacionados às Diretrizes de Acessibilidade para Conteúdo Web (WCAG)" ou "sugira melhorias na navegação por teclado". O Copilot iniciará uma nova sessão para atender ao comentário.
 
 ## Exercício opcional - continuar explorando localmente
 
-Trabalhar de forma iterativa com um agente no IDE é uma habilidade, e a única forma de desenvolvê-la é praticar. Algumas ideias para próximas sessões que você pode executar no VS Code:
+Trabalhar de forma iterativa com um agente no ambiente de desenvolvimento integrado (IDE) é uma habilidade, e a única forma de desenvolvê-la é praticar. Algumas ideias para próximas sessões que você pode executar no VS Code:
 
 - Adicione um formulário de interesse para apoiadores na página de detalhes do jogo.
 - Implemente paginação na página de lista de jogos.
@@ -68,7 +68,7 @@ Isso encerra a trilha obrigatória do VS Code. Você pode parar aqui com o works
 
 Se quiser ampliar sua perspectiva sobre os recursos de agente do Copilot, as outras trilhas abordam cenários relacionados em interfaces diferentes:
 
-- 💻 **[Trilha da CLI](../../cli/)** — execute fluxos semelhantes no terminal com o Copilot CLI: modo de planejamento, skills de agentes, agentes personalizados e comandos de barra, como `/share`, `/context` e `/delegate`.
+- 💻 **[Trilha da interface de linha de comando (CLI)](../../cli/)** — execute fluxos semelhantes no terminal com o Copilot CLI: modo de planejamento, skills de agentes, agentes personalizados e comandos de barra, como `/share`, `/context` e `/delegate`.
 - ☁️ **[Trilha do agente na nuvem](../../cloud/)** — concentre-se em atribuir issues ao agente na nuvem, monitorar sessões pela página de agentes e iterar de forma assíncrona em pull requests.
 
 Você também pode continuar desenvolvendo o que começou aqui. O [awesome-copilot][awesome-copilot] é uma ótima fonte de arquivos de instruções, agentes personalizados e skills que você pode adaptar aos seus projetos.

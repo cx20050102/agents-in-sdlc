@@ -1,12 +1,12 @@
 ---
-title: "Lição 7 - Criar e usar um agente de QA"
+title: "Lição 7 - Criar e usar um agente de garantia de qualidade (QA)"
 description: "Crie um perfil de QA que parta dos requisitos e combine cobertura de testes, a skill quality-checks e evidências diretas do navegador."
 authors:
   - geektrainer
 lastUpdated: 2026-09-17
 ---
 
-Você usou a skill `quality-checks` para executar verificações automatizadas e o MCP do Playwright para observar a experiência de filtragem em um navegador. Agora, reunirá essas capacidades em um agente personalizado com um processo de QA claramente definido.
+Você usou a skill `quality-checks` para executar verificações automatizadas e o servidor Playwright do Model Context Protocol (MCP) para observar a experiência de filtragem em um navegador. Agora, reunirá essas capacidades em um agente personalizado com um processo de QA claramente definido.
 
 Nesta lição, você vai:
 
@@ -32,9 +32,9 @@ Antes de abrir o PR do recurso, você pedirá ao Copilot que crie um perfil de Q
 2. Envie o prompt a seguir ao Copilot para criar o novo agente personalizado:
 
     ```plaintext
-    Create a custom agent named QA in .github/agents/qa.agent.md. It should check features against their issues and agreed requirements, follow the repository instructions, run the quality-checks skill, use Playwright MCP to verify behavior, and add tests when coverage is missing.
+    Crie um agente personalizado chamado QA em `.github/agents/qa.agent.md`. Ele deve comparar os recursos com as respectivas issues e os requisitos acordados, seguir as instruções do repositório, executar a skill `quality-checks`, usar o Playwright MCP para verificar o comportamento e adicionar testes quando a cobertura estiver incompleta.
 
-    Have it report each requirement as pass, fail, or blocked with supporting evidence. It must ask before changing implementation code, and it must not commit changes or open pull requests. Use the current model and available tools. Just create the profile for now so I can review it.
+    Peça que ele classifique cada requisito como `pass`, `fail` ou `blocked` e apresente as evidências correspondentes. Ele deve pedir autorização antes de alterar o código de implementação e não deve fazer commits nem abrir pull requests. Use o modelo atual e as ferramentas disponíveis. Por enquanto, apenas crie o perfil para que eu possa revisá-lo.
     ```
 
 ## Examinar o perfil
@@ -56,7 +56,7 @@ Com o perfil revisado, selecione QA na sessão atual para que ele possa usar a i
 3. Envie o prompt a seguir para pedir que o QA revise o recurso:
 
     ```plaintext
-    Review the filtering feature against the issue and the decisions in our plan. Is it ready for a PR?
+    Revise o recurso de filtragem com base na issue e nas decisões do nosso plano. Ele está pronto para um PR?
     ```
 
 4. Confirme que o QA usa a issue e as decisões de planejamento corretas. Forneça a URL da issue ou qualquer contexto ausente se ele solicitar.

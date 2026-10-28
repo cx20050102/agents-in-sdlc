@@ -15,7 +15,7 @@ next: { link: /copilot-workshops/ko-kr/real-world-development/app/10-review/, la
 이 모듈을 마치면 다음을 갖추게 됩니다.
 
 - Foundry 자격 증명과 대화 식별자를 보호하는 로컬 Azure Functions 프록시(Proxy)
-- 엔드투엔드(End-to-end) 동작을 검증한 접근성 있는 채팅 위젯
+- 종단 간(end-to-end) 동작을 검증한 접근성 있는 채팅 위젯
 - 로컬에서 검증한 통합과 리소스 정리 체크포인트
 
 ## 시나리오

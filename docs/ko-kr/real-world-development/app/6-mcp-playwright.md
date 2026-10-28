@@ -10,7 +10,7 @@ lastUpdated: 2026-07-09
 
 이 레슨에서는 다음 작업을 수행합니다.
 
-- Model Context Protocol (MCP)의 개념과 GitHub Copilot app에서 사용하는 방식을 이해합니다.
+- 모델 컨텍스트 프로토콜(Model Context Protocol, MCP)의 개념과 GitHub Copilot app에서 사용하는 방식을 이해합니다.
 - **Customize**에서 Playwright MCP 서버를 추가합니다.
 - 에이전트에게 브라우저를 조작하여 필터링 기능을 살펴보도록 요청합니다.
 
@@ -20,7 +20,7 @@ lastUpdated: 2026-07-09
 
 ## Model Context Protocol (MCP)이란?
 
-[Model Context Protocol (MCP)][mcp-blog-post]은 AI 에이전트가 외부 도구 및 서비스와 통신하는 방법을 제공합니다. MCP를 사용하면 AI 에이전트가 외부 도구 및 서비스와 실시간으로 통신할 수 있습니다. 따라서 리소스를 사용하여 최신 정보에 접근하고 도구를 사용하여 사용자를 대신해 작업을 수행할 수 있습니다.
+[모델 컨텍스트 프로토콜(Model Context Protocol, MCP)][mcp-blog-post]은 AI 에이전트가 외부 도구 및 서비스와 통신하는 방법을 제공합니다. MCP를 사용하면 AI 에이전트가 외부 도구 및 서비스와 실시간으로 통신할 수 있습니다. 따라서 리소스를 사용하여 최신 정보에 접근하고 도구를 사용하여 사용자를 대신해 작업을 수행할 수 있습니다.
 
 이러한 도구와 리소스에는 AI 에이전트와 외부 도구 및 서비스를 연결하는 MCP 서버를 통해 접근합니다. MCP 서버는 AI 에이전트와 외부 도구(예: 기존 API 또는 NPM 패키지 같은 로컬 도구) 간의 통신을 관리합니다. 각 MCP 서버는 AI 에이전트가 접근할 수 있는 서로 다른 도구 및 리소스 집합을 나타냅니다.
 
@@ -39,9 +39,9 @@ lastUpdated: 2026-07-09
 사이드바의 **Customize**에서 MCP 서버를 관리합니다. 리포지토리나 Copilot CLI에 구성한 서버를 App에서 이미 사용할 수도 있으므로 중복 추가 전에 확인합니다. [App 사용자 지정 문서][customize-app]에서 사용 가능한 옵션을 설명합니다.
 
 1. 사이드바에서 **Customize**를 선택합니다.
-2. **MCP**를 선택한 다음 **Installed**에서 기존 Playwright 서버를 확인합니다.
-3. 필요하면 사용 가능한 서버에서 **Playwright**를 찾거나 게시자가 문서화한 사용자 지정 서버 추가 절차를 사용합니다.
-4. 게시자, 구성, 설치 요청을 검토한 후 승인합니다. 안내에 따라 서버를 추가합니다. 조직 정책이나 누락된 필수 조건으로 설정이 차단될 수 있습니다.
+2. **All types** 드롭다운을 열고 **MCP**를 선택한 다음, **Installed**에서 기존 Playwright 서버가 있는지 확인합니다.
+3. Playwright가 아직 설치되지 않았다면 사용 가능한 서버 목록에서 **Playwright**를 찾고 **Add server**를 선택합니다.
+4. 승인하기 전에 게시자, 구성, 설치 요청을 검토합니다. 안내에 따라 서버를 추가합니다. 조직 정책이나 누락된 필수 조건으로 설정이 차단될 수 있습니다.
 5. **Interactive** 모드의 필터링 세션으로 돌아가 Playwright MCP 도구를 사용할 수 있는지 확인합니다.
 
 설정이 실패하면 계속하기 전에 구성이나 권한 문제를 해결합니다.
@@ -67,8 +67,8 @@ lastUpdated: 2026-07-09
 
 GitHub Copilot app에서 Playwright MCP 서버를 사용하여 실제 브라우저로 기능을 살펴봤습니다. 요약하면 다음 작업을 수행했습니다.
 
-- Model Context Protocol (MCP)의 개념과 앱에서 MCP 도구를 제공하는 방식을 배웠습니다.
-- **Customize**에서 Playwright MCP 서버를 구성했습니다.
+- 모델 컨텍스트 프로토콜(Model Context Protocol, MCP)의 개념과 앱에서 MCP 도구를 제공하는 방식을 배웠습니다.
+- Playwright MCP 서버를 추가했습니다.
 - 에이전트에게 브라우저를 조작하여 필터링 기능을 살펴보도록 요청했습니다.
 
 다음으로 [레슨 7 - QA 에이전트 만들기 및 사용][next-lesson]에서 전문가 역할을 통해 스킬과 브라우저 도구를 결합합니다.
